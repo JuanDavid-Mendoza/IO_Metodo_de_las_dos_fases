@@ -2,7 +2,9 @@ from pulp import *
 from os import system
 
 while(True):
+    # Limpiando la consola
     system("cls")
+
     # Definiendo el tipo de problema
     problemType = input("Digite el tipo de problema (min/max): ")
     if(problemType.lower() == "min"):
@@ -46,9 +48,13 @@ while(True):
 
         problema += finalRestriction
 
+    # Limpiando la consola
+    system("cls")
+
     #Imprimiendo el problema por consola
     print("\n.:Problema a resolver:.\n")
     print('Funcion objetivo:')
+    print('Z = ', end='')
     print(problema.objective)
 
     print('\nRestricciones:')
